@@ -9,4 +9,4 @@ jobs:
   call-shared-workflow:
     uses: sds9-org/shared-actions/.github/workflows/shared-workflow.yml@main
     with:
-      example_input: ${{ github }}
+      example_input: ${{ toJSON(github) }}
